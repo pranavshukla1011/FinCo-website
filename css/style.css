@@ -65,7 +65,7 @@ img{
 .top-design{
     background: url(../images/home/landing-page-3.jpg) no-repeat center center/cover;
     height:100vh;
-    position: relative;
+    position: relative; /*for making overlay position absolute*/
     color:#fff;
 }
 
