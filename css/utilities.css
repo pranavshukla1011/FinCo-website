@@ -1,7 +1,43 @@
+/*Text Styles*/
 .text-primary{
-    color:green;
+    color:#28a745;
 }
 
 .text-secondary{
     color:#0284d0;
 }
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding:10px 30px;
+    border-radius:5px;
+    background-color: #28a745;
+    border:none;
+    font-weight: bolder;
+}
+
+.btn:hover{
+    opacity:0.8;
+}
+
+.btn-primary{
+    background:#28a745;
+    color:#fff; 
+}
+
+.btn-secondary{
+    background:#0284d0;
+    color:#fff; 
+}
+
+.btn-dark{
+    background:#333; 
+    color:#fff; 
+}
+
+.btn-light{
+    background:#fff;
+    color:#333; 
+}
+
