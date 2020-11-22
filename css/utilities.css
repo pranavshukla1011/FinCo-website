@@ -140,3 +140,11 @@
     max-width:25%;
     padding: 0 4px;
 }
+
+/*teams*/
+.flex-items img{
+    border-radius: 50%;
+    height:80%;
+    object-fit: cover;
+}
+
