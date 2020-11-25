@@ -65,8 +65,8 @@ img{
 }
 
 .top-design{
-    background:url(../images/home/landing-page.jpg) no-repeat center center/cover;
-    height:100vh;
+    background:url(../images/blog/blog-1.jpg) no-repeat  center/cover;
+    height:40vh;
     width:100%;
     position: relative; /*for making overlay position absolute*/
     color:#fff;
@@ -81,7 +81,7 @@ img{
 }
 
 .top-design .content h1{
-    font-size: 55px;
+    font-size: 40px;
 }
 
 .top-design .content p{
@@ -120,6 +120,7 @@ img{
 .flex-items .img{
     object-fit: cover;
 }
+
 
 .contact-form{
     background-color: rgb(243, 240, 240);
@@ -194,6 +195,10 @@ footer{
         max-width:100%;
     }
     
+    .flex-columns img{
+        visibility: collapse;
+        height:0px;
+    }
 }
 
 @media(max-width: 770px) and (min-width:520px){
@@ -252,6 +257,7 @@ footer{
 }
 
 @media(max-width:369px){
+
     #blog .column-1{
         visibility: collapse;
         height:0px;
@@ -269,6 +275,7 @@ footer{
     .navbar a{
         padding:0;
     }
+
 }
 
 @media(max-width:440px){
@@ -281,7 +288,7 @@ footer{
     }
     
     .top-design .content h1{
-        font-size: 46px;
+        font-size: 36px;
     }
     
     .top-design .content p{
