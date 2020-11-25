@@ -11,6 +11,7 @@ body{
     color:#333;
     line-height: 1.6;
     font-size:16px;
+    width:fit-content;
 }
 
 ul{
@@ -66,6 +67,7 @@ img{
 .top-design{
     background:url(../images/home/landing-page.jpg) no-repeat center center/cover;
     height:100vh;
+    width:100%;
     position: relative; /*for making overlay position absolute*/
     color:#fff;
 }
@@ -153,11 +155,139 @@ footer{
     opacity:0.7;
 }
 
+
 @media(max-width: 768px){
+    
+    .flex-items{
+        display: flex;
+        flex-direction:column;
+        margin:25px 25px;
+        height:100%;
+        text-align: center;
+    }
+
+    .flex-items > div{
+        padding:20px;
+    }
+
+    .flex-items img{
+        border-radius: 50%;
+        width:70%;
+        object-fit: cover;
+    }
+
+    .flex-columns {
+        display:flex;
+        flex-direction: column;
+        flex-basis:100%;
+        flex:1;
+    }
+
+    .flex-grid .row{
+        display:flex;
+        flex-direction:column;   
+    }    
+
+    .flex-grid .column{
+        display:flex;
+        flex-direction: column;
+        max-width:100%;
+    }
+    
+}
+
+@media(max-width: 770px) and (min-width:520px){
     #blog .column-1{
         visibility: collapse;
         height:0px;
     }
 
+    #navbar{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        height:fit-content;
+        padding-bottom:10px;
+    }
+
+    #navbar .logo{
+        margin:0.7em;
+    }
+
+    #navbar nav{
+        margin-bottom:0.7em;
+    }
+}
+
+@media(max-width: 520px) and (min-width:370px){
+    #blog .column-1{
+        visibility: collapse;
+        height:0px;
+    }
+
+    #navbar{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        height:fit-content;
+        padding-bottom:10px;
+    }
+
+    #navbar .logo{
+        margin:0.7em;
+    }
+
+    .navbar a{
+        color:#fff;
+        padding: 0 10px;
+        margin: 0 5px;
+    }
     
+    .navbar a:hover{
+        border-bottom:2px solid #28a745;
+    }
+
+}
+
+@media(max-width:369px){
+    #blog .column-1{
+        visibility: collapse;
+        height:0px;
+    }
+
+    #navbar{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        height:fit-content;
+        padding: 10px 0;
+    }
+
+    .navbar a{
+        padding:0;
+    }
+}
+
+@media(max-width:440px){
+    .top-design .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height:100%;
+    }
+    
+    .top-design .content h1{
+        font-size: 46px;
+    }
+    
+    .top-design .content p{
+        font-size: 20px;
+        max-width: width 600px;
+        margin:20px 0 30px 0;
+    }
+
 }
