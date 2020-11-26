@@ -48,6 +48,11 @@ img{
     top:0px;
     padding:0 30px;
     opacity:0.8;
+    transition:0.5s ease-in;
+}
+
+.navbar.top{
+    background:transparent;
 }
 
 .navbar a{
@@ -65,8 +70,16 @@ img{
 }
 
 .top-design{
+    background:url(../images/home/landing-page-3.jpg) no-repeat  center/cover;
+    height:100vh;
+    width:100%;
+    position: relative; /*for making overlay position absolute*/
+    color:#fff;
+}
+
+.blog-html{
     background:url(../images/blog/blog-1.jpg) no-repeat  center/cover;
-    height:40vh;
+    height:50vh;
     width:100%;
     position: relative; /*for making overlay position absolute*/
     color:#fff;
